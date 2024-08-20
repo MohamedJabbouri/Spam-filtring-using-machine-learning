@@ -145,6 +145,17 @@ def spam_test(text,my_model) :
         print("It's not a spam")
         
 
+# Save the models as .pkl files
+import pickle
+with open('lr_model.pkl', 'wb') as f:
+    pickle.dump(my_model_lr, f)
+
+with open('knn_model.pkl', 'wb') as f:
+    pickle.dump(my_model_knn, f)
+
+with open('nb_model.pkl', 'wb') as f:
+    pickle.dump(my_model_nb, f)
+
         
 
 
